@@ -1,0 +1,52 @@
+/* Reset for entire sheet */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid; /* Tells document we are using grid */
+  grid-template-columns: 1fr 1fr; /* Defines how many columns there are */
+  /* grid-template-columns: 200px 1fr; Defines 1 column that is 200px wide */
+  /* grid-template-columns: auto 1fr; Defines 1 column that is auto-width to the content */
+}
+
+/* Setting span of columns - Long way
+.title{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+*/
+
+/* Setting span of column - short way */
+.title{
+  grid-column: 1 / 3;
+}
+
+/* Setting span of column - using span
+.title{
+  grid-column-end: span 2;
+  grid-row-end: span 2; // THIS MAKES ELEMENT TAKE UP TWO ROWS
+*/
+
+.grid div:nth-child(even) {
+  background-color: red;
+}
+
+.grid div:nth-child(odd) {
+  background-color: green;
+}
+
+/* ALTERNATE WAY */
+/*.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "title title"
+  "header header"
+  "sidebar content"
+  "footer footer"
+  ;
+}
+*/

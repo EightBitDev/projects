@@ -4,7 +4,15 @@
 }
 
 body{
+  background-color: lightgrey;
+}
 
+body h2, h3{
+  text-align: center;
+}
+
+body li{
+  list-style-type: square;
 }
 
 .grid{
@@ -13,21 +21,84 @@ body{
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-/*
-.header
-.nav
-
-*/
-
 .header{
   grid-column: 2 /4;
   grid-row: 1;
-  background-color: lightskyblue;
   align-self: center;
   justify-self: center;
 }
 
+
 .nav{
   grid-column: span 4;
   grid-row: 2;
+} 
+
+.nav ul{
+  text-align: center;
+  list-style-type: none;
+}
+
+.nav li{
+  display: inline-block;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.contactInfo{
+  grid-column: 1 / 3;
+  justify-self: center;
+  background-color: pink;
+}
+
+.contactInfo li{
+  list-style-type: none;
+}
+
+.quals{
+  grid-column: 3 / 5;
+  justify-self: center;
+  background-color: yellow;
+}
+
+.quals li{
+  list-style-type: none;
+}
+
+.repair{
+  grid-column: 1 / 3;
+  padding-top: 25px;
+  justify-self: center;
+}
+
+.training{
+  grid-column: 3 / 5;
+  justify-self: center;
+  padding-top: 25px;
+  background-color: pink;
+}
+
+
+.consult{
+  grid-column: 1 / 3;
+  justify-self: center;
+  text-align: center;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.news{
+grid-column: 3 / 5;
+justify-self: center;
+padding-top: 25px;
+}
+
+.footer{
+  grid-column: span 4;
+  padding-top: 25px;
+  padding-left: 25px;
 }

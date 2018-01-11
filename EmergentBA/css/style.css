@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-areas:
+  "header header"
+  "nav content";
+}
+
+.header{
+  grid-area: header;
+  background-color: pink;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.headerText{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.nav{
+  grid-area: nav;
+  background-color: green;
+}
+
+.nav a:link, a:visited{
+  color: black;
+}
+
+.nav a:hover{
+  color: red;
+}
+
+.nav a:active{
+  color: blue;
+}
+
+.nav a:link, a:visited{
+  text-decoration: none;
+}
+
+.content{
+  grid-area: content;
+}
+
+.blog{
+  border-radius: 10px;
+  /*background-color: lightgray;*/
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 25px;
+  padding: 25px;
+}
+
+.blog h3{
+  padding-bottom: 10px;
+}
+
+.blog h4{
+  padding-top: 10px;
+}
+
+.blog .list{
+  padding-left: 15%;
+}
+
+.blog .list h4{
+  padding-top: 10px;
+  text-decoration: underline;
+}
+
+.blog li{
+  padding-bottom: .15em;
+}
+
+.pageNav{
+  text-align: center;
+}
+
+.definition{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+#designTable{
+  font-family: arial, sans-serif;
+  font-size: .8em;
+  width: 80%;
+  margin: auto;
+}
+
+#designTable td, th{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+#designTable tr:nth-child(even){
+  background-color: lightgray;
+}
+
+.callout{
+  text-align: center;
+  font-weight: bold;
+  margin: 25px auto;
+  background-color: lightblue;
+  width: 80%;
+  border-radius: 10px;
+}
